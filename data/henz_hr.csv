@@ -1,0 +1,201 @@
+employeeId,firstName,lastName,email,department,jobTitle,manager,status,startDate,location,costCenter,employeeType
+H001,Adaeze,Salami,adaeze.salami@henz.com,Executive,Chief Executive Officer,,active,2017-03-01,Lagos,CC-EXE-100,fulltime
+H002,Chukwuemeka,Traore,chukwuemeka.traore@henz.com,IT,IT Director,H001,active,2019-07-04,Abuja,CC-IT-194,fulltime
+H003,Folake,Davis,folake.davis@henz.com,IT,IT Manager,H002,active,2024-02-12,Lagos,CC-IT-175,fulltime
+H004,Chijindu,Eze,chijindu.eze@henz.com,IT,Infrastructure Manager,H002,active,2018-05-03,Lagos,CC-IT-127,fulltime
+H005,Binta,Adetoye,binta.adetoye@henz.com,IT,Security Manager,H002,active,2024-10-01,Lagos,CC-IT-171,fulltime
+H006,Oluwadare,Osei,oluwadare.osei@henz.com,IT,IT Support Specialist,H003,active,2024-01-14,Kano,CC-IT-135,fulltime
+H007,Henry,Moore,henry.moore@henz.com,IT,Systems Administrator,H004,active,2023-09-28,Port Harcourt,CC-IT-135,fulltime
+H008,Halima,Hamidu,halima.hamidu@henz.com,IT,IAM Engineer,H005,active,2022-10-10,Lagos,CC-IT-111,fulltime
+H009,Amara,Okoye,amara.okoye@henz.com,IT,Help Desk Technician,H003,active,2022-11-09,Kano,CC-IT-133,fulltime
+H010,Adewale,Olawale,adewale.olawale@henz.com,IT,Systems Administrator,H004,active,2020-05-26,Ibadan,CC-IT-110,fulltime
+H011,Moussa,Olatunji,moussa.olatunji@henz.com,IT,Cloud Engineer,H005,active,2021-02-26,Lagos,CC-IT-105,fulltime
+H012,Chukwudi,Fasanya,chukwudi.fasanya@henz.com,IT,IT Support Specialist,H003,active,2021-08-11,Lagos,CC-IT-148,fulltime
+H013,Afolabi,Chukwuedo,afolabi.chukwuedo@henz.com,IT,Cloud Engineer,H004,active,2023-02-03,Abuja,CC-IT-147,fulltime
+H014,Usman,Brown,usman.brown@henz.com,IT,Security Analyst,H005,active,2021-12-29,Lagos,CC-IT-177,fulltime
+H015,Kwame,Mensah,kwame.mensah@henz.com,IT,IAM Engineer,H003,active,2024-03-08,Ibadan,CC-IT-134,fulltime
+H016,Sandra,Ofori,sandra.ofori@henz.com,IT,IT Support Specialist,H004,active,2019-08-18,Abuja,CC-IT-104,fulltime
+H017,Oluwafemi,Camara,oluwafemi.camara@henz.com,IT,Security Analyst,H005,active,2019-09-29,Abuja,CC-IT-172,fulltime
+H018,Aliyu,Johnson,aliyu.johnson@henz.com,IT,Security Analyst,H003,active,2024-08-06,Ibadan,CC-IT-182,fulltime
+H019,Yemi,Toure,yemi.toure@henz.com,IT,DevOps Engineer,H004,active,2020-07-25,Abuja,CC-IT-195,fulltime
+H020,Chibuike,Olatunde,chibuike.olatunde@henz.com,IT,Cloud Engineer,H005,active,2023-06-24,Port Harcourt,CC-IT-128,fulltime
+H021,Uche,Adetola,uche.adetola@henz.com,IT,IAM Engineer,H003,active,2020-01-08,Lagos,CC-IT-114,fulltime
+H022,Henry,Garba,henry.garba@henz.com,IT,IAM Engineer,H004,active,2023-09-26,Kano,CC-IT-108,fulltime
+H023,Fatoumata,Chukwu,fatoumata.chukwu@henz.com,IT,Help Desk Technician,H005,active,2024-04-01,Kano,CC-IT-132,fulltime
+H024,Tunde,Miller,tunde.miller@henz.com,Finance,Finance Director,H001,active,2025-01-31,Lagos,CC-FIN-187,fulltime
+H025,Kojo,Hussain,kojo.hussain@henz.com,Finance,Finance Manager,H024,active,2025-03-10,Port Harcourt,CC-FIN-114,fulltime
+H026,Obioma,Ibeneme,obioma.ibeneme@henz.com,Finance,Accounting Manager,H024,active,2019-10-10,Ibadan,CC-FIN-100,fulltime
+H027,Adwoa,Adetoye,adwoa.adetoye@henz.com,Finance,Payroll Manager,H024,active,2020-01-02,Kano,CC-FIN-113,fulltime
+H028,Onwudiwe,Chukwueke,onwudiwe.chukwueke@henz.com,Finance,Payroll Specialist,H025,active,2021-03-25,Abuja,CC-FIN-147,fulltime
+H029,Emeka,Chukwu,emeka.chukwu@henz.com,Finance,Accounts Receivable Clerk,H026,active,2022-08-20,Ibadan,CC-FIN-102,fulltime
+H030,Moussa,Nsiah,moussa.nsiah@henz.com,Finance,Accounts Payable Clerk,H027,active,2022-06-13,Abuja,CC-FIN-107,fulltime
+H031,Jane,Fasanya,jane.fasanya@henz.com,Finance,Financial Analyst,H025,active,2024-06-13,Lagos,CC-FIN-197,fulltime
+H032,Bisi,Williams,bisi.williams@henz.com,Finance,Accounts Receivable Clerk,H026,active,2024-04-30,Kano,CC-FIN-121,fulltime
+H033,Chijindu,Frimpong,chijindu.frimpong@henz.com,Finance,Payroll Specialist,H027,active,2025-01-17,Abuja,CC-FIN-191,fulltime
+H034,Oluwafemi,Brown,oluwafemi.brown@henz.com,Finance,Payroll Specialist,H025,active,2023-03-10,Ibadan,CC-FIN-166,fulltime
+H035,Kemi,Traore,kemi.traore@henz.com,Finance,Treasury Analyst,H026,on_leave,2021-07-09,Lagos,CC-FIN-143,fulltime
+H036,Hauwa,Olasubomi,hauwa.olasubomi@henz.com,Finance,Senior Accountant,H027,active,2021-06-21,Lagos,CC-FIN-109,fulltime
+H037,Hauwa,Obioma,hauwa.obioma@henz.com,Finance,Senior Accountant,H025,active,2019-05-09,Port Harcourt,CC-FIN-109,fulltime
+H038,Obiageli,Brown,obiageli.brown@henz.com,Finance,Financial Analyst,H026,active,2024-06-11,Abuja,CC-FIN-169,fulltime
+H039,Adeyinka,Traore,adeyinka.traore@henz.com,Finance,Accounts Receivable Clerk,H027,active,2024-04-21,Ibadan,CC-FIN-124,fulltime
+H040,Amara,Williams,amara.williams@henz.com,Finance,Accounts Payable Clerk,H025,active,2023-11-01,Port Harcourt,CC-FIN-154,fulltime
+H041,Adeniyi,Nkrumah,adeniyi.nkrumah@henz.com,Finance,Budget Analyst,H026,active,2019-08-10,Lagos,CC-FIN-107,fulltime
+H042,Peter,Dangana,peter.dangana@henz.com,Finance,Budget Analyst,H027,active,2020-03-23,Abuja,CC-FIN-124,fulltime
+H043,Chiedozie,Abdullahi,chiedozie.abdullahi@henz.com,Finance,Financial Analyst,H025,active,2023-09-25,Abuja,CC-FIN-135,fulltime
+H044,Abena,Ntim,abena.ntim@henz.com,Finance,Treasury Analyst,H026,active,2019-11-05,Ibadan,CC-FIN-170,fulltime
+H045,Bayo,Johnson,bayo.johnson@henz.com,Finance,Accounts Payable Clerk,H027,active,2025-01-23,Lagos,CC-FIN-111,fulltime
+H046,Grace,Ihejieto,grace.ihejieto@henz.com,Finance,Financial Analyst,H025,on_leave,2024-06-12,Ibadan,CC-FIN-127,fulltime
+H047,Tobi,Asante,tobi.asante@henz.com,Finance,Budget Analyst,H026,active,2023-04-02,Lagos,CC-FIN-149,fulltime
+H048,Afolabi,Keita,afolabi.keita@henz.com,Finance,Payroll Specialist,H027,active,2023-09-29,Kano,CC-FIN-184,fulltime
+H049,Chiamaka,Agyeman,chiamaka.agyeman@henz.com,Finance,Treasury Analyst,H025,active,2022-04-30,Abuja,CC-FIN-107,fulltime
+H050,Solomon,Yusuf,solomon.yusuf@henz.com,Finance,Senior Accountant,H026,active,2019-07-25,Kano,CC-FIN-161,fulltime
+H051,Dayo,Adetokunbo,dayo.adetokunbo@henz.com,Finance,Accounts Receivable Clerk,H027,active,2019-11-25,Abuja,CC-FIN-108,fulltime
+H052,Wale,Davis,wale.davis@henz.com,HR,HR Director,H001,active,2019-08-22,Ibadan,CC-HR-115,fulltime
+H053,Abena,Olatunde,abena.olatunde@henz.com,HR,HR Manager,H052,active,2024-09-01,Lagos,CC-HR-179,fulltime
+H054,Jane,Ike,jane.ike@henz.com,HR,Talent Acquisition Manager,H052,active,2025-05-16,Kano,CC-HR-172,fulltime
+H055,Solomon,Toure,solomon.toure@henz.com,HR,Training Coordinator,H053,active,2021-04-16,Port Harcourt,CC-HR-130,fulltime
+H056,Olumide,Musa,olumide.musa@henz.com,HR,HR Generalist,H054,active,2022-05-13,Ibadan,CC-HR-140,fulltime
+H057,Tunde,Ibe,tunde.ibe@henz.com,HR,HR Coordinator,H053,active,2025-04-25,Lagos,CC-HR-109,fulltime
+H058,Aliyu,Adetoye,aliyu.adetoye@henz.com,HR,Training Coordinator,H054,active,2021-12-22,Abuja,CC-HR-144,fulltime
+H059,Kwame,Okolo,kwame.okolo@henz.com,HR,HR Coordinator,H053,inactive,2022-03-13,Abuja,CC-HR-156,fulltime
+H060,Ugochi,Chukwuemeka,ugochi.chukwuemeka@henz.com,HR,Training Coordinator,H054,active,2024-12-06,Lagos,CC-HR-185,fulltime
+H061,Chioma,Williams,chioma.williams@henz.com,HR,Training Coordinator,H053,active,2020-02-29,Abuja,CC-HR-133,fulltime
+H062,Chidinma,Suleiman,chidinma.suleiman@henz.com,HR,HR Coordinator,H054,active,2025-03-16,Abuja,CC-HR-134,fulltime
+H063,Usman,Anderson,usman.anderson@henz.com,HR,HR Generalist,H053,active,2022-11-05,Abuja,CC-HR-187,fulltime
+H064,Okafor,Coulibaly,okafor.coulibaly@henz.com,HR,HRIS Analyst,H054,active,2019-07-28,Lagos,CC-HR-181,fulltime
+H065,Chukwuemeka,Nwosu,chukwuemeka.nwosu@henz.com,HR,Benefits Specialist,H053,active,2019-01-15,Port Harcourt,CC-HR-198,fulltime
+H066,Shade,Chukwuedo,shade.chukwuedo@henz.com,Sales,Sales Director,H001,active,2019-12-09,Abuja,CC-SAL-194,fulltime
+H067,Chidera,Olayinka,chidera.olayinka@henz.com,Sales,Regional Sales Manager,H066,inactive,2022-10-18,Kano,CC-SAL-101,fulltime
+H068,Adaeze,Nze,adaeze.nze@henz.com,Sales,Key Accounts Manager,H066,active,2019-09-03,Kano,CC-SAL-104,fulltime
+H069,Mamadou,Olatunde,mamadou.olatunde@henz.com,Sales,Inside Sales Manager,H066,active,2024-03-13,Abuja,CC-SAL-155,fulltime
+H070,Bisi,Nwosu,bisi.nwosu@henz.com,Sales,Channel Sales Manager,H066,active,2021-06-16,Port Harcourt,CC-SAL-105,fulltime
+H071,Fatou,Darko,fatou.darko@henz.com,Sales,Sales Operations Manager,H066,active,2020-10-19,Lagos,CC-SAL-145,fulltime
+H072,Oluwabunmi,Chukwudi,oluwabunmi.chukwudi@henz.com,Sales,Sales Engineer,H067,active,2020-09-25,Abuja,CC-SAL-120,fulltime
+H073,Oluwasegun,Salami,oluwasegun.salami@henz.com,Sales,Business Development Rep,H068,active,2021-01-04,Port Harcourt,CC-SAL-152,fulltime
+H074,Abena,Camara,abena.camara@henz.com,Sales,Customer Success Manager,H069,active,2020-10-14,Lagos,CC-SAL-148,fulltime
+H075,Adeyemi,Osei,adeyemi.osei@henz.com,Sales,Account Executive,H070,inactive,2021-03-28,Ibadan,CC-SAL-144,fulltime
+H076,Hauwa,Osei,hauwa.osei@henz.com,Sales,Sales Analyst,H071,active,2019-04-07,Abuja,CC-SAL-151,fulltime
+H077,Obiageli,Nkrumah,obiageli.nkrumah@henz.com,Sales,Sales Analyst,H067,active,2019-10-12,Port Harcourt,CC-SAL-144,fulltime
+H078,Uche,Ihejirika,uche.ihejirika@henz.com,Sales,Customer Success Manager,H068,active,2025-01-05,Port Harcourt,CC-SAL-103,fulltime
+H079,Kwesi,Boateng,kwesi.boateng@henz.com,Sales,Account Executive,H069,active,2021-12-23,Lagos,CC-SAL-113,fulltime
+H080,Chizaram,Okorie,chizaram.okorie@henz.com,Sales,Sales Engineer,H070,active,2022-07-08,Ibadan,CC-SAL-177,fulltime
+H081,Yetunde,Ogbonna,yetunde.ogbonna@henz.com,Sales,Sales Engineer,H071,active,2025-06-19,Abuja,CC-SAL-132,fulltime
+H082,Chizaram,Adeyemi,chizaram.adeyemi@henz.com,Sales,Account Executive,H067,active,2024-10-30,Kano,CC-SAL-187,fulltime
+H083,Abdullahi,Okpara,abdullahi.okpara@henz.com,Sales,Customer Success Manager,H068,active,2023-11-02,Lagos,CC-SAL-185,fulltime
+H084,Solomon,Williams,solomon.williams@henz.com,Sales,Sales Analyst,H069,active,2020-05-25,Port Harcourt,CC-SAL-164,fulltime
+H085,Oluwabunmi,Obinna,oluwabunmi.obinna@henz.com,Sales,Sales Analyst,H070,active,2023-07-07,Port Harcourt,CC-SAL-170,fulltime
+H086,Joshua,Ike,joshua.ike@henz.com,Sales,Business Development Rep,H071,active,2023-04-02,Abuja,CC-SAL-178,fulltime
+H087,Ugochi,Ihejirika,ugochi.ihejirika@henz.com,Sales,Sales Engineer,H067,active,2025-02-22,Lagos,CC-SAL-138,fulltime
+H088,Usman,Ibeneme,usman.ibeneme@henz.com,Sales,Sales Analyst,H068,active,2022-08-12,Ibadan,CC-SAL-156,fulltime
+H089,Aliyu,Adetokunbo,aliyu.adetokunbo@henz.com,Sales,Account Manager,H069,active,2024-04-22,Abuja,CC-SAL-184,fulltime
+H090,Chinyere,Adetokunbo,chinyere.adetokunbo@henz.com,Sales,Account Executive,H070,active,2022-10-04,Lagos,CC-SAL-196,fulltime
+H091,Uchenna,Osei,uchenna.osei@henz.com,Sales,Business Development Rep,H071,active,2021-03-26,Abuja,CC-SAL-103,fulltime
+H092,Kwame,Adesanya,kwame.adesanya@henz.com,Sales,Account Executive,H067,active,2019-10-26,Ibadan,CC-SAL-153,fulltime
+H093,Joshua,Anderson,joshua.anderson@henz.com,Sales,Customer Success Manager,H068,active,2023-04-22,Ibadan,CC-SAL-151,fulltime
+H094,Sade,Johnson,sade.johnson@henz.com,Sales,Business Development Rep,H069,active,2019-01-23,Lagos,CC-SAL-199,fulltime
+H095,Zainab,Boateng,zainab.boateng@henz.com,Sales,Account Manager,H070,active,2024-10-22,Ibadan,CC-SAL-106,fulltime
+H096,Abena,Oduro,abena.oduro@henz.com,Sales,Sales Engineer,H071,active,2020-05-12,Ibadan,CC-SAL-117,fulltime
+H097,Precious,Bashir,precious.bashir@henz.com,Sales,Account Manager,H067,active,2023-12-18,Kano,CC-SAL-192,fulltime
+H098,Chibuike,Quansah,chibuike.quansah@henz.com,Sales,Sales Engineer,H068,active,2025-02-22,Ibadan,CC-SAL-120,fulltime
+H099,Adeyinka,Ibeanu,adeyinka.ibeanu@henz.com,Sales,Customer Success Manager,H069,active,2021-11-27,Abuja,CC-SAL-181,fulltime
+H100,Nwosu,Chukwuma,nwosu.chukwuma@henz.com,Sales,Sales Analyst,H070,active,2021-09-06,Port Harcourt,CC-SAL-156,fulltime
+H101,Nnamdi,Diallo,nnamdi.diallo@henz.com,Sales,Account Executive,H071,active,2022-01-17,Port Harcourt,CC-SAL-140,fulltime
+H102,Jane,Abdullahi,jane.abdullahi@henz.com,Sales,Sales Engineer,H067,active,2020-09-09,Abuja,CC-SAL-149,fulltime
+H103,Chiamaka,Taylor,chiamaka.taylor@henz.com,Sales,Customer Success Manager,H068,active,2021-05-26,Lagos,CC-SAL-153,fulltime
+H104,Michael,Olawumi,michael.olawumi@henz.com,Sales,Account Manager,H069,active,2024-03-23,Ibadan,CC-SAL-107,fulltime
+H105,Oluwadare,Ogbonna,oluwadare.ogbonna@henz.com,Sales,Business Development Rep,H070,active,2019-03-22,Kano,CC-SAL-148,fulltime
+H106,Adekunle,Adeyemi,adekunle.adeyemi@henz.com,Operations,Operations Director,H001,active,2020-12-11,Port Harcourt,CC-OPE-196,fulltime
+H107,Kadiatou,Obeng,kadiatou.obeng@henz.com,Operations,Operations Manager,H106,active,2022-09-13,Kano,CC-OPE-195,fulltime
+H108,Zainab,Adetutu,zainab.adetutu@henz.com,Operations,Logistics Manager,H106,active,2020-06-17,Port Harcourt,CC-OPE-155,fulltime
+H109,Nwosu,Salami,nwosu.salami@henz.com,Operations,Procurement Manager,H106,active,2022-05-12,Port Harcourt,CC-OPE-185,fulltime
+H110,Oluwakemi,Thomas,oluwakemi.thomas@henz.com,Operations,Facilities Manager,H106,active,2019-11-08,Ibadan,CC-OPE-116,fulltime
+H111,Oluwaseun,Olasubomi,oluwaseun.olasubomi@henz.com,Operations,Logistics Coordinator,H107,active,2025-04-30,Lagos,CC-OPE-110,fulltime
+H112,Tope,Nkrumah,tope.nkrumah@henz.com,Operations,Fleet Coordinator,H108,active,2024-03-06,Abuja,CC-OPE-106,fulltime
+H113,Fatoumata,Obinna,fatoumata.obinna@henz.com,Operations,Inventory Controller,H109,active,2021-05-16,Ibadan,CC-OPE-141,fulltime
+H114,Fatoumata,Sidibe,fatoumata.sidibe@henz.com,Operations,Dispatch Coordinator,H110,active,2023-09-23,Port Harcourt,CC-OPE-110,fulltime
+H115,Seun,Suleiman,seun.suleiman@henz.com,Operations,Quality Control Analyst,H107,active,2025-01-18,Lagos,CC-OPE-144,fulltime
+H116,Wale,Lawal,wale.lawal@henz.com,Operations,Supply Chain Analyst,H108,active,2019-06-14,Lagos,CC-OPE-131,fulltime
+H117,Kunle,Chukwudi,kunle.chukwudi@henz.com,Operations,Supply Chain Analyst,H109,active,2020-09-16,Abuja,CC-OPE-116,fulltime
+H118,Yetunde,Olayiwola,yetunde.olayiwola@henz.com,Operations,Quality Control Analyst,H110,active,2021-06-11,Ibadan,CC-OPE-189,fulltime
+H119,Mamadou,Asante,mamadou.asante@henz.com,Operations,Inventory Controller,H107,active,2020-04-14,Abuja,CC-OPE-139,fulltime
+H120,Dare,Sangare,dare.sangare@henz.com,Operations,Warehouse Supervisor,H108,active,2025-06-16,Ibadan,CC-OPE-150,fulltime
+H121,Ade,Olasubomi,ade.olasubomi@henz.com,Operations,Supply Chain Analyst,H109,active,2021-09-21,Lagos,CC-OPE-189,fulltime
+H122,Kemi,Garba,kemi.garba@henz.com,Operations,Inventory Controller,H110,active,2025-05-07,Lagos,CC-OPE-144,fulltime
+H123,Mamadou,Obioma,mamadou.obioma@henz.com,Operations,Fleet Coordinator,H107,active,2024-09-03,Port Harcourt,CC-OPE-101,fulltime
+H124,Okafor,Afolabi,okafor.afolabi@henz.com,Operations,Fleet Coordinator,H108,active,2023-11-11,Port Harcourt,CC-OPE-181,fulltime
+H125,Chiamaka,Ibeneme,chiamaka.ibeneme@henz.com,Operations,Quality Control Analyst,H109,active,2020-12-22,Kano,CC-OPE-183,fulltime
+H126,Adegoke,Ibeji,adegoke.ibeji@henz.com,Operations,Inventory Controller,H110,active,2023-11-20,Kano,CC-OPE-134,fulltime
+H127,Kwame,Quansah,kwame.quansah@henz.com,Operations,Dispatch Coordinator,H107,active,2019-12-21,Port Harcourt,CC-OPE-157,fulltime
+H128,Adesola,Olayiwola,adesola.olayiwola@henz.com,Operations,Supply Chain Analyst,H108,active,2023-04-02,Port Harcourt,CC-OPE-103,fulltime
+H129,Sandra,Owusu,sandra.owusu@henz.com,Operations,Quality Control Analyst,H109,active,2024-06-20,Abuja,CC-OPE-145,fulltime
+H130,Mary,Sidibe,mary.sidibe@henz.com,Operations,Inventory Controller,H110,active,2022-02-05,Kano,CC-OPE-101,fulltime
+H131,Aisha,Diallo,aisha.diallo@henz.com,Operations,Supply Chain Analyst,H107,active,2023-07-23,Ibadan,CC-OPE-171,fulltime
+H132,Adeyinka,Chukwuebuka,adeyinka.chukwuebuka@henz.com,Operations,Supply Chain Analyst,H108,active,2024-07-03,Ibadan,CC-OPE-102,fulltime
+H133,Obioma,Osei,obioma.osei@henz.com,Operations,Warehouse Supervisor,H109,active,2023-07-15,Abuja,CC-OPE-139,fulltime
+H134,Adeyinka,Olayinka,adeyinka.olayinka@henz.com,Operations,Dispatch Coordinator,H110,active,2024-12-14,Port Harcourt,CC-OPE-154,fulltime
+H135,Ahmed,Moore,ahmed.moore@henz.com,Operations,Dispatch Coordinator,H107,active,2024-02-02,Port Harcourt,CC-OPE-139,fulltime
+H136,Binta,Ibrahim,binta.ibrahim@henz.com,Operations,Inventory Controller,H108,active,2021-02-27,Port Harcourt,CC-OPE-115,fulltime
+H137,Joshua,Frimpong,joshua.frimpong@henz.com,Operations,Procurement Analyst,H109,active,2024-06-06,Port Harcourt,CC-OPE-192,fulltime
+H138,Ifeoma,Quansah,ifeoma.quansah@henz.com,Operations,Inventory Controller,H110,active,2021-03-06,Port Harcourt,CC-OPE-129,fulltime
+H139,Emmanuel,Doumbia,emmanuel.doumbia@henz.com,Operations,Dispatch Coordinator,H107,active,2019-02-27,Kano,CC-OPE-116,fulltime
+H140,Ola,Adebayo,ola.adebayo@henz.com,Operations,Inventory Controller,H108,active,2025-03-16,Port Harcourt,CC-OPE-189,fulltime
+H141,Bisi,Chukwuedo,bisi.chukwuedo@henz.com,Legal,General Counsel,H001,active,2025-06-11,Ibadan,CC-LEG-113,fulltime
+H142,Rotimi,Olatunji,rotimi.olatunji@henz.com,Legal,Legal Manager,H141,active,2021-03-10,Ibadan,CC-LEG-161,fulltime
+H143,Mary,Owusu,mary.owusu@henz.com,Legal,Contract Specialist,H142,active,2019-07-30,Port Harcourt,CC-LEG-161,fulltime
+H144,Sola,Ihejirika,sola.ihejirika@henz.com,Legal,Legal Counsel,H142,active,2024-07-07,Lagos,CC-LEG-173,fulltime
+H145,Nneka,Aliyu,nneka.aliyu@henz.com,Legal,Legal Counsel,H142,active,2025-04-24,Port Harcourt,CC-LEG-110,fulltime
+H146,Kemi,Olayemi,kemi.olayemi@henz.com,Legal,Paralegal,H142,active,2023-09-01,Kano,CC-LEG-176,fulltime
+H147,Maryam,Lawal,maryam.lawal@henz.com,Legal,Risk Analyst,H142,active,2024-11-10,Ibadan,CC-LEG-157,fulltime
+H148,Chioma,Nkrumah,chioma.nkrumah@henz.com,Legal,Contract Specialist,H142,active,2023-10-23,Port Harcourt,CC-LEG-172,fulltime
+H149,Tobi,Chukwuemeka,tobi.chukwuemeka@henz.com,Legal,Risk Analyst,H142,active,2020-02-11,Abuja,CC-LEG-180,fulltime
+H150,Adwoa,Williams,adwoa.williams@henz.com,Legal,Paralegal,H142,active,2019-11-29,Abuja,CC-LEG-130,fulltime
+H151,Daniel,Olayinka,daniel.olayinka@henz.com,Marketing,Marketing Director,H001,active,2017-11-04,Abuja,CC-MAR-100,fulltime
+H152,Oluwabunmi,Ibeanu,oluwabunmi.ibeanu@henz.com,Marketing,Digital Marketing Manager,H151,active,2024-08-29,Ibadan,CC-MAR-137,fulltime
+H153,Adebayo,Acheampong,adebayo.acheampong@henz.com,Marketing,Brand Manager,H151,active,2021-03-26,Port Harcourt,CC-MAR-189,fulltime
+H154,Afolabi,Nze,afolabi.nze@henz.com,Marketing,PR Coordinator,H152,active,2021-08-14,Port Harcourt,CC-MAR-180,fulltime
+H155,Abdullahi,Iheke,abdullahi.iheke@henz.com,Marketing,Marketing Analyst,H153,active,2020-04-15,Kano,CC-MAR-128,fulltime
+H156,Nneka,Camara,nneka.camara@henz.com,Marketing,Campaign Manager,H152,active,2020-08-05,Lagos,CC-MAR-107,fulltime
+H157,Adaora,Chukwu,adaora.chukwu@henz.com,Marketing,SEO Analyst,H153,active,2025-05-20,Port Harcourt,CC-MAR-156,fulltime
+H158,Adeniyi,Wilson,adeniyi.wilson@henz.com,Marketing,Content Strategist,H152,active,2022-05-30,Ibadan,CC-MAR-134,fulltime
+H159,Obi,Ibeh,obi.ibeh@henz.com,Marketing,Marketing Analyst,H153,active,2019-11-26,Kano,CC-MAR-105,fulltime
+H160,Victor,Chukwueke,victor.chukwueke@henz.com,Marketing,Graphic Designer,H152,active,2021-10-22,Lagos,CC-MAR-111,fulltime
+H161,Kunle,Hamidu,kunle.hamidu@henz.com,Marketing,SEO Analyst,H153,active,2022-01-08,Kano,CC-MAR-105,fulltime
+H162,Daniel,Adesanya,daniel.adesanya@henz.com,Marketing,PR Coordinator,H152,active,2024-10-26,Ibadan,CC-MAR-135,fulltime
+H163,Chizaram,Chukwuedo,chizaram.chukwuedo@henz.com,Marketing,SEO Analyst,H153,active,2024-07-07,Lagos,CC-MAR-160,fulltime
+H164,Oluwabunmi,Okonkwo,oluwabunmi.okonkwo@henz.com,Marketing,Social Media Manager,H152,active,2022-08-08,Lagos,CC-MAR-120,fulltime
+H165,Oluwasegun,Wilson,oluwasegun.wilson@henz.com,Marketing,Social Media Manager,H153,active,2024-07-22,Port Harcourt,CC-MAR-184,fulltime
+H166,Femi,Ibe,femi.ibe@henz.com,Marketing,Graphic Designer,H152,active,2019-12-27,Port Harcourt,CC-MAR-132,fulltime
+H167,Yetunde,Hussain,yetunde.hussain@henz.com,Marketing,Social Media Manager,H153,active,2023-07-14,Kano,CC-MAR-100,fulltime
+H168,Adesola,Ihejieto,adesola.ihejieto@henz.com,Marketing,Campaign Manager,H152,active,2019-08-11,Abuja,CC-MAR-166,fulltime
+H169,Eze,Chukwuma,eze.chukwuma@henz.com,Marketing,Social Media Manager,H153,inactive,2023-12-16,Lagos,CC-MAR-126,fulltime
+H170,Shade,Keita,shade.keita@henz.com,Marketing,Social Media Manager,H152,active,2023-11-30,Ibadan,CC-MAR-115,fulltime
+H171,Babajide,Chukwuma,babajide.chukwuma@henz.com,Engineering,Engineering Director,H001,active,2023-10-30,Abuja,CC-ENG-190,fulltime
+H172,Henry,Sangare,henry.sangare@henz.com,Engineering,Software Engineering Manager,H171,active,2024-03-06,Lagos,CC-ENG-170,fulltime
+H173,Oluwabunmi,Adewale,oluwabunmi.adewale@henz.com,Engineering,QA Manager,H171,inactive,2020-07-09,Lagos,CC-ENG-159,fulltime
+H174,Kemi,Chukwuebuka,kemi.chukwuebuka@henz.com,Engineering,Platform Engineering Manager,H171,active,2019-09-23,Ibadan,CC-ENG-191,fulltime
+H175,Chukwudi,Adetokunbo,chukwudi.adetokunbo@henz.com,Engineering,Data Engineering Manager,H171,active,2021-01-24,Ibadan,CC-ENG-161,fulltime
+H176,Kwame,Ibe,kwame.ibe@henz.com,Engineering,Backend Engineer,H172,on_leave,2025-03-07,Abuja,CC-ENG-149,fulltime
+H177,Uche,Suleiman,uche.suleiman@henz.com,Engineering,Data Engineer,H173,active,2020-07-13,Lagos,CC-ENG-135,fulltime
+H178,Mary,Badmus,mary.badmus@henz.com,Engineering,Frontend Engineer,H174,active,2024-09-10,Port Harcourt,CC-ENG-100,fulltime
+H179,Chioma,Ofori,chioma.ofori@henz.com,Engineering,Platform Engineer,H175,inactive,2024-06-28,Abuja,CC-ENG-157,fulltime
+H180,Adegoke,Okorie,adegoke.okorie@henz.com,Engineering,ML Engineer,H172,active,2022-09-23,Kano,CC-ENG-197,fulltime
+H181,Oumar,Ibe,oumar.ibe@henz.com,Engineering,ML Engineer,H173,active,2022-08-11,Abuja,CC-ENG-189,fulltime
+H182,Ibrahima,Acheampong,ibrahima.acheampong@henz.com,Engineering,Data Engineer,H174,active,2023-08-10,Lagos,CC-ENG-140,fulltime
+H183,Fatoumata,Ogbonna,fatoumata.ogbonna@henz.com,Engineering,Backend Engineer,H175,active,2020-09-15,Ibadan,CC-ENG-104,fulltime
+H184,Igwe,Olasubomi,igwe.olasubomi@henz.com,Engineering,QA Engineer,H172,inactive,2022-09-21,Lagos,CC-ENG-156,fulltime
+H185,Afolabi,Okafor,afolabi.okafor@henz.com,Engineering,Senior Software Engineer,H173,active,2020-08-13,Ibadan,CC-ENG-183,fulltime
+H186,Ade,Adesanya,ade.adesanya@henz.com,Engineering,QA Engineer,H174,active,2021-12-21,Port Harcourt,CC-ENG-179,fulltime
+H187,Jane,Obeng,jane.obeng@henz.com,Engineering,Frontend Engineer,H175,active,2022-09-07,Kano,CC-ENG-148,fulltime
+H188,Nwosu,Ntim,nwosu.ntim@henz.com,Engineering,Site Reliability Engineer,H172,active,2025-01-25,Lagos,CC-ENG-179,fulltime
+H189,Kofi,Chukwuma,kofi.chukwuma@henz.com,Engineering,Senior Software Engineer,H173,active,2022-03-23,Abuja,CC-ENG-195,fulltime
+H190,Chizaram,Coker,chizaram.coker@henz.com,Engineering,Senior Software Engineer,H174,active,2020-02-16,Ibadan,CC-ENG-121,fulltime
+H191,Babajide,Nwosu,babajide.nwosu@henz.com,Engineering,Platform Engineer,H175,active,2022-08-21,Lagos,CC-ENG-137,fulltime
+H192,Mariama,Ibeneme,mariama.ibeneme@henz.com,Engineering,Site Reliability Engineer,H172,on_leave,2020-08-19,Abuja,CC-ENG-167,fulltime
+H193,Blessing,Asante,blessing.asante@henz.com,Engineering,Frontend Engineer,H173,active,2020-12-18,Lagos,CC-ENG-178,fulltime
+H194,Ama,Adetola,ama.adetola@henz.com,Engineering,Frontend Engineer,H174,active,2020-08-09,Abuja,CC-ENG-159,fulltime
+H195,Adewale,Coulibaly,adewale.coulibaly@henz.com,Engineering,Platform Engineer,H175,inactive,2019-02-08,Ibadan,CC-ENG-136,fulltime
+H196,Henry,Nze,henry.nze@henz.com,Engineering,ML Engineer,H172,active,2023-12-15,Port Harcourt,CC-ENG-175,fulltime
+H197,Chijindu,Wilson,chijindu.wilson@henz.com,Engineering,Platform Engineer,H173,active,2021-10-21,Ibadan,CC-ENG-138,fulltime
+H198,Ibrahima,Obeng,ibrahima.obeng@henz.com,Engineering,Data Engineer,H174,active,2024-06-02,Lagos,CC-ENG-130,fulltime
+H199,Fatou,Olatunji,fatou.olatunji@henz.com,Engineering,Frontend Engineer,H175,active,2022-04-26,Port Harcourt,CC-ENG-102,fulltime
+H200,Chukwuemeka,Okafor,chukwuemeka.okafor@henz.com,Engineering,Frontend Engineer,H172,active,2025-05-07,Lagos,CC-ENG-177,fulltime

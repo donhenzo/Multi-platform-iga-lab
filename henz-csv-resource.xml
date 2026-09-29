@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3"
+          xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3"
+          xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3"
+          xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3"
+          xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3"
+          xmlns:ext="http://henz.com/xml/ns/midpoint/schema/extension"
+          oid="a1b2c3d4-0001-0001-0001-000000000001">
+
+    <name>Henz Industries HR CSV</name>
+    <description>Authoritative HR source — 200 users, Henz Industries</description>
+
+    <connectorRef type="ConnectorType">
+        <filter>
+            <q:equal>
+                <q:path>connectorType</q:path>
+                <q:value>com.evolveum.polygon.connector.csv.CsvConnector</q:value>
+            </q:equal>
+        </filter>
+    </connectorRef>
+
+    <connectorConfiguration>
+        <icfc:configurationProperties
+            xmlns:csvconf="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-csv/com.evolveum.polygon.connector.csv.CsvConnector">
+            <csvconf:filePath>/opt/midpoint/var/import/henz_hr.csv</csvconf:filePath>
+            <csvconf:uniqueAttribute>employeeId</csvconf:uniqueAttribute>
+            <csvconf:nameAttribute>employeeId</csvconf:nameAttribute>
+            <csvconf:encoding>UTF-8</csvconf:encoding>
+            <csvconf:fieldDelimiter>,</csvconf:fieldDelimiter>
+            <csvconf:multivalueDelimiter>;</csvconf:multivalueDelimiter>
+            <csvconf:readOnly>true</csvconf:readOnly>
+        </icfc:configurationProperties>
+    </connectorConfiguration>
+
+    <schemaHandling>
+        <objectType>
+            <kind>account</kind>
+            <intent>default</intent>
+            <displayName>HR Employee</displayName>
+            <default>true</default>
+            <objectClass>ri:AccountObjectClass</objectClass>
+
+            <attribute>
+                <ref>ri:employeeId</ref>
+                <displayName>Employee ID</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/name</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:firstName</ref>
+                <displayName>First Name</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/givenName</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:lastName</ref>
+                <displayName>Last Name</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/familyName</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:email</ref>
+                <displayName>Email</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/emailAddress</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:department</ref>
+                <displayName>Department</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/organizationalUnit</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:jobTitle</ref>
+                <displayName>Job Title</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/title</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:manager</ref>
+                <displayName>Manager Employee ID</displayName>
+            </attribute>
+
+            <attribute>
+                <ref>ri:status</ref>
+                <displayName>Employment Status</displayName>
+                <inbound>
+                    <expression>
+                        <script>
+                            <code>
+                                if (input == 'active') {
+                                    return com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType.ENABLED
+                                } else {
+                                    return com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType.DISABLED
+                                }
+                            </code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>$user/activation/administrativeStatus</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:startDate</ref>
+                <displayName>Start Date</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/extension/ext:startDate</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:location</ref>
+                <displayName>Location</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/locality</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:costCenter</ref>
+                <displayName>Cost Center</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/costCenter</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:employeeType</ref>
+                <displayName>Employee Type</displayName>
+                <inbound>
+                    <target>
+                        <path>$user/extension/ext:employeeType</path>
+                    </target>
+                </inbound>
+            </attribute>
+
+        </objectType>
+    </schemaHandling>
+
+    <synchronization>
+        <objectSynchronization>
+            <name>HR Employee sync</name>
+            <kind>account</kind>
+            <intent>default</intent>
+            <focusType>UserType</focusType>
+            <enabled>true</enabled>
+
+            <correlation>
+                <q:equal>
+                    <q:path>name</q:path>
+                    <expression>
+                        <path>$account/attributes/icfs:name</path>
+                    </expression>
+                </q:equal>
+            </correlation>
+
+            <reaction>
+                <situation>linked</situation>
+                <synchronize>true</synchronize>
+            </reaction>
+            <reaction>
+                <situation>unlinked</situation>
+                <action>
+                    <handlerUri>http://midpoint.evolveum.com/xml/ns/public/model/action-3#link</handlerUri>
+                </action>
+            </reaction>
+            <reaction>
+                <situation>unmatched</situation>
+                <action>
+                    <handlerUri>http://midpoint.evolveum.com/xml/ns/public/model/action-3#addFocus</handlerUri>
+                </action>
+            </reaction>
+            <reaction>
+                <situation>deleted</situation>
+                <action>
+                    <handlerUri>http://midpoint.evolveum.com/xml/ns/public/model/action-3#deleteFocus</handlerUri>
+                </action>
+            </reaction>
+
+        </objectSynchronization>
+    </synchronization>
+
+</resource>

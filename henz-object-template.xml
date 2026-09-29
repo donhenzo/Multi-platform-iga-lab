@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objectTemplate xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3"
+                xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3"
+                oid="a1b2c3d4-0002-0002-0002-000000000001">
+
+    <name>Henz User Template</name>
+    <description>Auto-assigns department roles based on organizationalUnit</description>
+
+    <mapping>
+        <name>Auto-assign IT role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'IT'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Finance role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Finance</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Finance'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign HR role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: HR</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'HR'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Sales role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Sales</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Sales'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Operations role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Operations</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Operations'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Legal role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Legal</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Legal'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Marketing role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Marketing</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Marketing'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Engineering role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Engineering</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <target>
+            <path>assignment</path>
+            <set>
+                <condition>
+                    <script>
+                        <code>organizationalUnit == 'Engineering'</code>
+                    </script>
+                </condition>
+            </set>
+        </target>
+    </mapping>
+
+</objectTemplate>

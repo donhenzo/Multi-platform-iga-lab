@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3"
+          xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3"
+          xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3"
+          xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3"
+          xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3"
+          oid="a1b2c3d4-0003-0003-0003-000000000001">
+    <name>Henz Okta</name>
+    <connectorRef type="ConnectorType">
+        <filter>
+            <q:equal>
+                <q:path>connectorType</q:path>
+                <q:value>net.tirasa.connid.bundles.okta.OktaConnector</q:value>
+            </q:equal>
+        </filter>
+    </connectorRef>
+    <connectorConfiguration>
+        <icfc:configurationProperties
+            xmlns:oktaconf="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/net.tirasa.connid.bundles.okta/net.tirasa.connid.bundles.okta.OktaConnector">
+            <oktaconf:domain>https://trial-8201680.okta.com</oktaconf:domain>
+            <oktaconf:oktaApiToken>
+                <clearValue>00uGg3ZkkdhtE4sM1xFyWLDk2n7IZqStt7Zf1qPiIP</clearValue>
+            </oktaconf:oktaApiToken>
+        </icfc:configurationProperties>
+    </connectorConfiguration>
+
+    <schemaHandling>
+        <objectType>
+            <kind>account</kind>
+            <intent>default</intent>
+            <displayName>Okta User</displayName>
+            <default>true</default>
+            <objectClass>ri:AccountObjectClass</objectClass>
+
+            <!-- login = email address, used as the Okta username -->
+            <attribute>
+                <ref>icfs:name</ref>
+                <displayName>Login</displayName>
+                <outbound>
+                    <source><path>$user/emailAddress</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:login</ref>
+                <displayName>Login</displayName>
+                <outbound>
+                    <source><path>$user/emailAddress</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:firstName</ref>
+                <displayName>First Name</displayName>
+                <outbound>
+                    <source><path>$user/givenName</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:lastName</ref>
+                <displayName>Last Name</displayName>
+                <outbound>
+                    <source><path>$user/familyName</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:email</ref>
+                <displayName>Email</displayName>
+                <outbound>
+                    <source><path>$user/emailAddress</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:department</ref>
+                <displayName>Department</displayName>
+                <outbound>
+                    <source><path>$user/organizationalUnit</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:title</ref>
+                <displayName>Job Title</displayName>
+                <outbound>
+                    <source><path>$user/title</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:employeeNumber</ref>
+                <displayName>Employee Number</displayName>
+                <outbound>
+                    <source><path>$user/name</path></source>
+                </outbound>
+            </attribute>
+
+            <attribute>
+                <ref>ri:costCenter</ref>
+                <displayName>Cost Center</displayName>
+                <outbound>
+                    <source><path>$user/costCenter</path></source>
+                </outbound>
+            </attribute>
+
+            <!-- Activation: map MidPoint enabled/disabled to Okta account state -->
+            <activation>
+                <administrativeStatus>
+                    <outbound/>
+                </administrativeStatus>
+            </activation>
+        </objectType>
+    </schemaHandling>
+
+    <synchronization>
+        <objectSynchronization>
+            <name>Okta User sync</name>
+            <kind>account</kind>
+            <intent>default</intent>
+            <focusType>UserType</focusType>
+            <enabled>true</enabled>
+            <correlation>
+                <q:equal>
+                    <q:path>emailAddress</q:path>
+                    <expression>
+                        <path>$account/attributes/ri:email</path>
+                    </expression>
+                </q:equal>
+            </correlation>
+            <!-- Provision outbound only: MidPoint → Okta -->
+            <reaction>
+                <situation>linked</situation>
+                <synchronize>true</synchronize>
+            </reaction>
+            <reaction>
+                <situation>unlinked</situation>
+                <action>
+                    <handlerUri>http://midpoint.evolveum.com/xml/ns/public/model/action-3#link</handlerUri>
+                </action>
+            </reaction>
+            <reaction>
+                <situation>unmatched</situation>
+                <!-- Do NOT create MidPoint users from Okta - HR CSV is authoritative -->
+                <synchronize>false</synchronize>
+            </reaction>
+        </objectSynchronization>
+    </synchronization>
+</resource>

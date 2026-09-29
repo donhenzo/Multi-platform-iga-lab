@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3"
+      oid="a1b2c3d4-0010-0001-0001-000000000002">
+    <name>Role: IT - IAM Engineer</name>
+    <description>Provisioned to Okta with group AWS-IT-IAM</description>
+    <inducement>
+        <construction>
+            <resourceRef oid="a1b2c3d4-0003-0003-0003-000000000001" type="ResourceType"/>
+            <kind>account</kind>
+            <intent>default</intent>
+            <attribute>
+                <ref xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3">ri:oktaGroups</ref>
+                <outbound>
+                    <strength>strong</strength>
+                    <expression>
+                        <value>00g182dawn8azaZ1Y698</value>
+                    </expression>
+                </outbound>
+            </attribute>
+        </construction>
+    </inducement>
+</role>

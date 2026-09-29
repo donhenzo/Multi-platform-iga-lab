@@ -1,0 +1,10 @@
+# Secrets
+*.env
+*secret*
+*token*
+
+# OS junk
+.DS_Store
+
+# Editor
+.vscode/

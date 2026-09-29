@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3">
+
+    <role>
+        <name>Role: Finance</name>
+        <displayName>Finance Department</displayName>
+        <description>Base role for all Finance department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: HR</name>
+        <displayName>HR Department</displayName>
+        <description>Base role for all HR department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: Sales</name>
+        <displayName>Sales Department</displayName>
+        <description>Base role for all Sales department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: Operations</name>
+        <displayName>Operations Department</displayName>
+        <description>Base role for all Operations department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: Legal</name>
+        <displayName>Legal Department</displayName>
+        <description>Base role for all Legal department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: Marketing</name>
+        <displayName>Marketing Department</displayName>
+        <description>Base role for all Marketing department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+    <role>
+        <name>Role: Engineering</name>
+        <displayName>Engineering Department</displayName>
+        <description>Base role for all Engineering department employees</description>
+        <assignment>
+            <targetRef oid="00000000-0000-0000-0000-000000000321" type="ArchetypeType"/>
+        </assignment>
+    </role>
+
+</objects>

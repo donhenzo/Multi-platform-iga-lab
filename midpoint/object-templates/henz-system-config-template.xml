@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objectTemplate xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3"
+                xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3"
+                oid="a1b2c3d4-0002-0002-0002-000000000001">
+
+    <name>Henz User Template</name>
+    <description>Auto-assigns department roles based on organizationalUnit</description>
+
+    <mapping>
+        <name>Auto-assign IT role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    import com.evolveum.midpoint.util.MiscUtil
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'IT'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Finance role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Finance</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Finance'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign HR role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: HR</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'HR'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Sales role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Sales</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Sales'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Operations role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Operations</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Operations'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Legal role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Legal</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Legal'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Marketing role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Marketing</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Marketing'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Auto-assign Engineering role</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: Engineering</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def ou = basic.stringify(organizationalUnit)
+                    return ou == 'Engineering'
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - Systems Admin</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - Systems Admin</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; t == 'Systems Administrator' &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - IAM Engineer</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - IAM Engineer</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; t == 'IAM Engineer' &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - Cloud Engineer</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - Cloud Engineer</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; t == 'Cloud Engineer' &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - Security Analyst</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - Security Analyst</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; t == 'Security Analyst' &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - DevOps Engineer</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - DevOps Engineer</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; t == 'DevOps Engineer' &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+    <mapping>
+        <name>Assign Role: IT - Support</name>
+        <strength>strong</strength>
+        <source>
+            <path>$user/organizationalUnit</path>
+        </source>
+        <source>
+            <path>$user/title</path>
+        </source>
+        <source>
+            <path>$user/name</path>
+        </source>
+        <expression>
+            <assignmentTargetSearch>
+                <targetType>RoleType</targetType>
+                <filter>
+                    <q:equal>
+                        <q:path>name</q:path>
+                        <q:value>Role: IT - Support</q:value>
+                    </q:equal>
+                </filter>
+            </assignmentTargetSearch>
+        </expression>
+        <condition>
+            <script>
+                <code>
+                    def dept = basic.stringify(organizationalUnit)
+                    def t = basic.stringify(title)
+                    def eid = basic.stringify(name)
+                    def pilotIds = ['H006','H007','H008','H011','H014','H019']
+                    return dept == 'IT' &amp;&amp; (t == 'IT Support Specialist' || t == 'Help Desk Technician') &amp;&amp; pilotIds.contains(eid)
+                </code>
+            </script>
+        </condition>
+        <target>
+            <path>assignment</path>
+        </target>
+    </mapping>
+
+</objectTemplate>
